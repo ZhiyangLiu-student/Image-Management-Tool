@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="250.0" maxWidth="200.0" minHeight="250.0" minWidth="200.0" prefHeight="250.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThumbnailController">
+   <children>
+      <HBox alignment="CENTER" maxHeight="100.0" minHeight="100.0" prefHeight="100.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="filenameLabel" text="Label">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" />
+               </VBox.margin></Label>
+            <Label fx:id="widthLabel" text="Label">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" />
+               </VBox.margin></Label>
+            <Label fx:id="heightLabel" text="Label">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" />
+               </VBox.margin></Label>
+            <Label fx:id="locationLabel" text="Label">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin></Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="26.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#onDeleteButtonClicked" text="Delete">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></Button>
+            <Button fx:id="transformButton" mnemonicParsing="false" onAction="#onTransformButtonClicked" text="Convert" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
